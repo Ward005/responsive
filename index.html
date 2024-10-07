@@ -103,49 +103,17 @@
 
       footer {
         background-color: #b0b9d4;
+        color: #fff;
         text-align: center;
+        clear: both;
       }
 
-      @media (max-width: 767.98px) {
-        .col-1 {
-          width: 8.33%;
-        }
-        .col-2 {
-          width: 16.66%;
-        }
-        .col-3 {
-          width: 25%;
-        }
-        .col-4 {
-          width: 33.33%;
-        }
-        .col-5 {
-          width: 41.66%;
-        }
-        .col-6 {
-          width: 50%;
-        }
-        .col-7 {
-          width: 58.33%;
-        }
-        .col-8 {
-          width: 66.66%;
-        }
-        .col-9 {
-          width: 75%;
-        }
-        .col-10 {
-          width: 83.33%;
-        }
-        .col-11 {
-          width: 91.66%;
-        }
-        .col-12 {
-          width: 100%;
-        }
+      footer p {
+        margin: 0;
+        padding: 15px;
       }
 
-      @media only screen and (min-width: 600px) {
+      @media (max-width: 768px) {
         .col-s-1 {
           width: 8.33%;
         }
@@ -183,6 +151,44 @@
           width: 100%;
         }
       }
+      @media (max-width: 600px) {
+        .col-xs-1 {
+          width: 8.33%;
+        }
+        .col-xs-2 {
+          width: 16.66%;
+        }
+        .col-xs-3 {
+          width: 25%;
+        }
+        .col-xs-4 {
+          width: 33.33%;
+        }
+        .col-xs-5 {
+          width: 41.66%;
+        }
+        .col-xs-6 {
+          width: 50%;
+        }
+        .col-xs-7 {
+          width: 58.33%;
+        }
+        .col-xs-8 {
+          width: 66.66%;
+        }
+        .col-xs-9 {
+          width: 75%;
+        }
+        .col-xs-10 {
+          width: 83.33%;
+        }
+        .col-xs-11 {
+          width: 91.66%;
+        }
+        .col-xs-12 {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -191,7 +197,7 @@
     </div>
 
     <div class="row">
-      <div class="col-3 menu">
+      <div class="col-3 col-s-3 col-xs-12 menu">
         <ul>
           <li>The Flight</li>
           <li>The City</li>
@@ -200,7 +206,7 @@
         </ul>
       </div>
 
-      <div class="col-6">
+      <div class="col-6 col-s-9 col-xs-12 main">
         <h1>The City</h1>
         <p>
           Chania is the capital of the Chania region on the island of Crete. The
@@ -208,7 +214,7 @@
         </p>
       </div>
 
-      <div class="col-3 right">
+      <div class="col-3 col-s-12 right">
         <ul>
           <li>
             <h2>What</h2>
@@ -227,12 +233,10 @@
     </div>
 
     <footer class="row">
-      <div class="col-12">
-        <p>
-          Resize the browser window to see how the content respond to the
-          resizing.
-        </p>
-      </div>
+      <p>
+        Resize the browser window to see how the content respond to the
+        resizing.
+      </p>
     </footer>
   </body>
 </html>
